@@ -27,7 +27,7 @@
         render: function(){
           return (
             <div className="commentContainer">
-              <div className="commentText">Text of whatever </div>
+              <div className="commentText">{this.props.children}</div>
               <button onClick={this.edit} className="button-primary">Edit</button>
               <button onClick={this.remove} className="button-danger">Remove</button>
             </div>
@@ -36,7 +36,9 @@
       });
       ReactDOM.render(
         <div className="board">
-          <Comment>Hey now</Comment>
+          <Comment>Hey my name is Shaan</Comment>
+          <Comment>Hey my name is Foltz</Comment>
+          <Comment>Hey my name is Abigail</Comment>
         </div>
         , document.getElementById('container'));
 
